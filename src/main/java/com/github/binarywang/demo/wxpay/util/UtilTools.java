@@ -1,5 +1,7 @@
 package com.github.binarywang.demo.wxpay.util;
 
+import java.util.UUID;
+
 /**
  * Created by chen on 2017/6/21.
  */
@@ -10,6 +12,16 @@ public class UtilTools {
         if (nanoTime > 999999) {
             nanoTime = nanoTime - nanoTime /1000000 * 1000000;
         }
-        return System.currentTimeMillis() + "_" + nanoTime;
+
+        String randomNumStr = String.valueOf((int)(Math.random() * 1000000));
+
+        return System.currentTimeMillis() + "_" + nanoTime + randomNumStr;
+    }
+
+    //生成数据库中的id
+    public static String generateId() {
+        String uuid = UUID.randomUUID().toString().replace("-", "");
+        long currentTime = System.currentTimeMillis();
+        return currentTime + "_" + uuid;
     }
 }

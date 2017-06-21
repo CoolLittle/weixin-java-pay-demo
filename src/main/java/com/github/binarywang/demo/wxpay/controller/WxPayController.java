@@ -320,13 +320,20 @@ public class WxPayController implements WxPayService {
      * @param deviceInfo 设备号	device_info	非必传参数，终端设备号
      * @return 保存到本地的临时文件
      */
+//    @Override
+//    @GetMapping("/downloadBill")
+//    public WxPayBillResult downloadBill(@RequestParam String billDate,
+//                                        @RequestParam String billType,
+//                                        @RequestParam String tarType,
+//                                        @RequestParam String deviceInfo) throws WxErrorException {
+//        return this.wxService.downloadBill(billDate, billType, tarType, deviceInfo);
+//    }
+
+
     @Override
-    @GetMapping("/downloadBill")
-    public WxPayBillResult downloadBill(@RequestParam String billDate,
-                                        @RequestParam String billType,
-                                        @RequestParam String tarType,
-                                        @RequestParam String deviceInfo) throws WxErrorException {
-        return this.wxService.downloadBill(billDate, billType, tarType, deviceInfo);
+    public File downloadBill(String s, String s1, String s2, String s3) throws WxErrorException {
+        //return null;
+        return this.wxService.downloadBill(s, s1, s2, s3);
     }
 
     /**

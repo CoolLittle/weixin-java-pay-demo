@@ -18,7 +18,7 @@
 	<description>微信支付 Demo with Spring Boot</description>
 
 	<properties>
-		<weixin-java-pay.version>2.6.2.BETA</weixin-java-pay.version>
+		<weixin-java-pay.version>2.5.0</weixin-java-pay.version>
 
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
@@ -39,7 +39,7 @@
 
 		<dependency>
 			<groupId>com.github.binarywang</groupId>
-			<artifactId>weixin-java-pay</artifactId>
+			<artifactId>weixin-java-mp</artifactId>
 			<version>${weixin-java-pay.version}</version>
 		</dependency>
 

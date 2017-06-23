@@ -13,6 +13,8 @@ public class PaymentProduct {
 
     private String productDescript;
 
+    private Integer isRecommend;
+
     public Integer getId() {
         return id;
     }
@@ -59,5 +61,13 @@ public class PaymentProduct {
 
     public void setProductDescript(String productDescript) {
         this.productDescript = productDescript == null ? null : productDescript.trim();
+    }
+
+    public Integer getIsRecommend() {
+        return isRecommend;
+    }
+
+    public void setIsRecommend(Integer isRecommend) {
+        this.isRecommend = isRecommend;
     }
 }

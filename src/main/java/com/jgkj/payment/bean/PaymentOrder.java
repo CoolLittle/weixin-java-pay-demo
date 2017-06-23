@@ -27,6 +27,8 @@ public class PaymentOrder {
 
     private Integer orderStatus;
 
+    private Integer userPhone;
+
     public Integer getId() {
         return id;
     }
@@ -129,5 +131,13 @@ public class PaymentOrder {
 
     public void setOrderStatus(Integer orderStatus) {
         this.orderStatus = orderStatus;
+    }
+
+    public Integer getUserPhone() {
+        return userPhone;
+    }
+
+    public void setUserPhone(Integer userPhone) {
+        this.userPhone = userPhone;
     }
 }

@@ -331,9 +331,9 @@ public class WxPayController implements WxPayService {
 
 
     @Override
-    public File downloadBill(String s, String s1, String s2, String s3) throws WxErrorException {
+    public File downloadBill(String billDate, String billType, String tarType, String deviceInfo) throws WxErrorException {
         //return null;
-        return this.wxService.downloadBill(s, s1, s2, s3);
+        return this.wxService.downloadBill(billDate, billType, tarType, deviceInfo);
     }
 
     /**

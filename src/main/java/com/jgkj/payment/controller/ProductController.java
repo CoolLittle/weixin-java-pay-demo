@@ -5,7 +5,9 @@ import com.jgkj.payment.mapper.PaymentProductMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.List;
 
@@ -13,12 +15,13 @@ import java.util.List;
  * Created by chen on 2017/6/23.
  */
 @Controller
+@ResponseBody
 public class ProductController {
     @Autowired
     PaymentProductMapper paymentProductMapper;
 
     @RequestMapping("/getAllProducts")
-    public List<PaymentProduct> getALlProduct() {
+    public Object getALlProduct() {
         return paymentProductMapper.selectAllProduct();
     }
 

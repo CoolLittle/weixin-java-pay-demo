@@ -2,6 +2,8 @@ package com.jgkj.payment.mapper;
 
 import com.jgkj.payment.bean.PaymentProduct;
 
+import java.util.List;
+
 public interface PaymentProductMapper {
     int deleteByPrimaryKey(Integer id);
 
@@ -14,4 +16,6 @@ public interface PaymentProductMapper {
     int updateByPrimaryKeySelective(PaymentProduct record);
 
     int updateByPrimaryKey(PaymentProduct record);
+
+    List<PaymentProduct> selectAllProduct();
 }

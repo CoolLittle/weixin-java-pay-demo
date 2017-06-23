@@ -11,8 +11,6 @@ public class PaymentOrder {
 
     private Integer productPrice;
 
-    private Integer createTime;
-
     private Integer schoolId;
 
     private Integer classId;
@@ -28,6 +26,8 @@ public class PaymentOrder {
     private Integer orderStatus;
 
     private Integer userPhone;
+
+    private Integer createTime;
 
     public Integer getId() {
         return id;
@@ -67,14 +67,6 @@ public class PaymentOrder {
 
     public void setProductPrice(Integer productPrice) {
         this.productPrice = productPrice;
-    }
-
-    public Integer getCreateTime() {
-        return createTime;
-    }
-
-    public void setCreateTime(Integer createTime) {
-        this.createTime = createTime;
     }
 
     public Integer getSchoolId() {
@@ -139,5 +131,13 @@ public class PaymentOrder {
 
     public void setUserPhone(Integer userPhone) {
         this.userPhone = userPhone;
+    }
+
+    public Integer getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(Integer createTime) {
+        this.createTime = createTime;
     }
 }

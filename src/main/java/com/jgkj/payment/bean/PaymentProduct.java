@@ -7,13 +7,15 @@ public class PaymentProduct {
 
     private String productName;
 
-    private Integer productPrice;
+    private Integer originProductPrice;
 
-    private Integer createTime;
+    private Integer productPrice;
 
     private String productDescript;
 
     private Integer isRecommend;
+
+    private Integer createTime;
 
     public Integer getId() {
         return id;
@@ -39,20 +41,20 @@ public class PaymentProduct {
         this.productName = productName == null ? null : productName.trim();
     }
 
+    public Integer getOriginProductPrice() {
+        return originProductPrice;
+    }
+
+    public void setOriginProductPrice(Integer originProductPrice) {
+        this.originProductPrice = originProductPrice;
+    }
+
     public Integer getProductPrice() {
         return productPrice;
     }
 
     public void setProductPrice(Integer productPrice) {
         this.productPrice = productPrice;
-    }
-
-    public Integer getCreateTime() {
-        return createTime;
-    }
-
-    public void setCreateTime(Integer createTime) {
-        this.createTime = createTime;
     }
 
     public String getProductDescript() {
@@ -69,5 +71,13 @@ public class PaymentProduct {
 
     public void setIsRecommend(Integer isRecommend) {
         this.isRecommend = isRecommend;
+    }
+
+    public Integer getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(Integer createTime) {
+        this.createTime = createTime;
     }
 }

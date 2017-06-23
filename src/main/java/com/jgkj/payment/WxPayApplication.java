@@ -10,9 +10,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 @SpringBootApplication
 @MapperScan(basePackages = "com.jgkj.payment.mapper")    //这句一定要加，否则扫描不出来
-public class WxPayDemoApplication {
+public class WxPayApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(WxPayDemoApplication.class, args);
+        SpringApplication.run(WxPayApplication.class, args);
     }
 }
